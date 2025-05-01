@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mello Personalizados</title>
+  <style>
+    /* Estilos Globais */
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: #FAF9F6;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h1, h2, h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0 0 10px;
+    }
+    button {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #D3B897;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    /* Navegação */
+    nav {
+      background: #C2A77D;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Seções */
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #D3B897;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    .product h3 {
+      margin: 15px 0 10px;
+      font-weight: 600;
+    }
+    .product p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #D3B897;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .buy-btn:hover {
+      background: #C2A77D;
+    }
+
+    /* Sobre Nós */
+    #sobre p {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* Contato */
+    #contato p {
+      font-size: 1.1em;
+      text-align: center;
+    }
+    #contato a {
+      color: #D3B897;
+      font-weight: 600;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #D3B897;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: white;
+      font-weight: 600;
+    }
+
+    /* Botão Flutuante do WhatsApp */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mello Personalizados</h1>
+  <p>Transformando momentos em lembranças únicas</p>
+</header>
+
+<nav>
+  <a href="#home">Início</a>
+  <a href="#produtos">Produtos</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="home">
+  <h2>Bem-vindo à Mello Personalizados</h2>
+  <p style="text-align: center;">Criações personalizadas para presentear, decorar e eternizar momentos. Cada produto é feito com carinho especialmente para você.</p>
+</section>
+
+<section id="produtos">
+  <h2>Nossos Produtos</h2>
+  <div class="products">
+    <div class="product">
+      <h3>Kit de Fotos Polaroids</h3>
+      <p>Fotos estilo retrô para presentear ou decorar com estilo.</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+    <div class="product">
+      <h3>Convites Digitais</h3>
+      <p>Convites modernos, animados ou clássicos, enviados por WhatsApp ou e-mail.</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+    <div class="product">
+      <h3>Chaveiros Personalizados</h3>
+      <p>Chaveiros criativos com fotos, frases ou temas especiais.</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+    <div class="product">
+      <h3>Quadros Personalizados</h3>
+      <p>Arte feita sob medida: nomes, datas, mapas estelares e muito mais.</p>
+      <button class="buy-btn">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p>A Mello Personalizados surgiu com a missão de tornar momentos simples em memórias eternas. Cada item é criado com atenção aos detalhes, carinho e dedicação. Atuamos com atendimento online e entregas para todo o Brasil.</p>
+</section>
+
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <p><strong>Email:</strong> <a href="mailto:mellopersonalizadosmp@gmail.com">mellopersonalizadosmp@gmail.com</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/5562981229710" target="_blank">(62) 98122-9710</a></p>
+  <p><strong>Instagram:</strong> <a href="https://instagram.com/mellopersonalizadoss" target="_blank">@mellopersonalizadoss</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mello Personalizados. Todos os direitos reservados.</p>
+  <p>Contato: <a href="mailto:mellopersonalizadosmp@gmail.com">mellopersonalizadosmp@gmail.com</a></p>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5562981229710" 
+   class="whatsapp-btn" 
+   target="_blank" 
+   title="Fale conosco no WhatsApp">
+  &#x1F4AC;
+</a>
+
+</body>
+</html>
